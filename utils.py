@@ -1,5 +1,5 @@
 '''Task 0: Import the modules csv and random'''
-
+import csv, random
 
 def startup():    
     """
@@ -9,6 +9,7 @@ def startup():
 
     :return: Does not return anything.
     """
+    print("\t\t\t\t\t\t\t\t\t\tWelcome in Pokemon APP!")
 
 
 def options():
@@ -20,6 +21,12 @@ def options():
 
     :return: None if invalid selection otherwise an integer corresponding to a valid selection
     """
+    print("Choose one of the options:\n1 = Check your pokemon\n2 = Add new pokemon\n3 = Show all pokemon\n4 = Visualise\n5 = Save your Pokedex\n6 = Exit")
+    opt = int(input())
+    if opt in {1,2,3,4,5,6}:
+        return opt
+    else:
+        return None
 
 
 def check_poke():
@@ -31,7 +38,12 @@ def check_poke():
 
     :return: None if an invalid selection made otherwise an integer corresponding to a valid option
     """
-
+    print("Choose one of the options:\n1 = By name \n2 = By type")
+    opt = int(input())
+    if opt in {1,2}:
+        return opt
+    else:
+        return None
 
 def add_poke():
     """
@@ -42,6 +54,12 @@ def add_poke():
 
     :return: None if an invalid selection made otherwise an integer corresponding to a valid option
     """
+    print("Choose one of the options:\n1 = Add specific\n2 = Add at random")
+    opt = int(input())
+    if opt in {1,2}:
+        return opt
+    else:
+        return None
 
 def visualise():
     """
@@ -52,7 +70,12 @@ def visualise():
 
     :return: None if an invalid selection made otherwise an integer corresponding to a valid option
     """
-
+    print("Choose one of the options:\n1 = By generation (Pie Chart)\n2 = By type(Bar Chart)")
+    opt = int(input())
+    if opt in {1,2}:
+        return opt
+    else:
+        return None
 def by_name(p_list = []):
     
     """
