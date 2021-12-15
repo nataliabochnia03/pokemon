@@ -1,5 +1,5 @@
 from utils import *
-
+from main import run
 #startup()
 
 #print(options())
@@ -14,3 +14,4 @@ from utils import *
 #print(load_pokes("pokemon_database.csv"))
 #print()
 #print(load_pokes("pokedex.csv"))
+run()
