@@ -54,6 +54,12 @@ def run():
             save_pokes(pokedex)
         elif option == 6:
             break
+        elif option == 4:
+            option2 = visualise()
+            if option2 == 1:
+                pie_chart(pokedex)
+            elif option2 == 2:
+                pie_chart(pokedex)
         else:
             print("Invalid option! Try again!")
 

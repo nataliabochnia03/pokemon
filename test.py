@@ -14,4 +14,5 @@ from main import run
 #print(load_pokes("pokemon_database.csv"))
 #print()
 #print(load_pokes("pokedex.csv"))
+#pie_chart(load_pokes("pokemon_database.csv"))
 run()
